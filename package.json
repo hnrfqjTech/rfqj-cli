@@ -1,0 +1,35 @@
+{
+  "name": "@hnrfqj/rfqj-cli",
+  "version": "1.0.1",
+  "description": "命令集",
+  "main": "main.js",
+  "scripts": {},
+  "keywords": [
+    "cli",
+    "hnrfqj"
+  ],
+  "dependencies": {
+    "cli": "^1.0.1",
+    "colors": "^1.1.2",
+    "common-bin": "^2.3.0",
+    "download-git-repo": "^1.1.0",
+    "fs-extra": "^7.0.1",
+    "homedir": "^0.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.2.2",
+    "eslint-config-ucweb": "^2"
+  },
+  "bin": {
+    "rfqj": "./bin/rfqj.js"
+  },
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "author": "bigang.ybg <93745726@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hnrfqjTech/rfqj-cli"
+  },
+  "license": "MIT"
+}
