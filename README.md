@@ -24,6 +24,7 @@ npm i -g @hnrfqj/rfqj-cli
 
 ```js
 rfqj clone boilerplateName [-p=destination]
+  -boilerplateName：vuePage、wxminiapp、opAdmin
 ```
 
 ## Issues
@@ -36,7 +37,7 @@ Fork the [repository](https://github.com/hnrfqjTech/rfqj-cli/pulls) and submit p
 
 ## Release Notes
 
-[CHANGELOG](https://github.com/hnrfqjTech/rfqj-cli/CHANGELOG.md)
+[CHANGELOG](https://github.com/hnrfqjTech/rfqj-cli/blob/master/CHANGELOG.md)
 
 ## License
 
