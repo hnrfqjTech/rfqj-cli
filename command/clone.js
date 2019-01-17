@@ -8,6 +8,8 @@
 const BaseCommand = require('../lib/BaseCommand');
 const fs = require('fs-extra');
 const path = require('path');
+const ora = require('ora');
+const spinner = ora('Loading...');
 const download = require('download-git-repo');
 const _ = require('../lib/utils');
 const baseDir = path.resolve(__dirname, '..');
@@ -50,10 +52,12 @@ class CloneCommand extends BaseCommand {
     const targetDirectory = this.getTargetDirectory(this.args.p, boilerplateName);
 
     if (boilerplateUrl && targetDirectory) {
+      spinner.start();
       download(`direct:${boilerplateUrl}`, targetDirectory, { clone: true },
         function(err) {
+          spinner.stop();
           if (err) alias.logger.error('Failed to download repo ' + boilerplateUrl + ': ' + err.message.trim());
-          else alias.logger.info(`(${boilerplateUrl}) download successful!`, 'boilerplate');
+          else alias.logger.info(`${boilerplateName} download successful!`, 'boilerplate ->');
         }
       );
     }
