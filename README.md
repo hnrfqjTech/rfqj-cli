@@ -8,9 +8,10 @@
 
 ## Features
 
-* 下载 vue spa 骨架
 * 下载基于 Element 的管理后台 boilerplate
 * 下载基于 vue 的微信小程序 boilerplate
+* 下载 vue spa page
+* 下载 nuxt spa page
 
 ## Installation
 
@@ -24,7 +25,7 @@ npm i -g @hnrfqj/rfqj-cli
 
 ```js
 rfqj clone boilerplateName [-p=destination]
-  -boilerplateName：vuePage、wxminiapp、opAdmin
+  -boilerplateName：wxminiapp、opAdmin、vuePage、nuxtPage
 ```
 
 ## Issues
